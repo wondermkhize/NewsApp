@@ -10,6 +10,8 @@ import { NavComponent } from './nav/nav.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
+import { NewsListComponent } from './news/news-list/news-list.component';
+import { NewsDetailComponent } from './news/news-detail/news-detail.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { RegisterComponent } from './register/register.component';
     AppComponent,
     NavComponent,
     HomeComponent,
-    RegisterComponent
+    RegisterComponent,
+    NewsListComponent,
+    NewsDetailComponent
   ],
   imports: [
     BrowserModule,
