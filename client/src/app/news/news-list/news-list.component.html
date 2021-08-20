@@ -3,10 +3,12 @@
         <h5 style="font-style: italic;">{{item.source.name}}</h5>
         <h3><a href="{{item.url}}">{{item.title}}</a></h3>
         <p class="lead">{{item.description}}</p>
+        <p style="font-style: italic;">Published on {{item.publishedAt | date}}, By {{item.author}}</p>
         <img src="{{item.urlToImage}}" width="600" height="300" alt="">
-        <p style="font-style: italic;">Published at {{item.publishedAt | date}}, By {{item.author}}</p>
         <div>
+            {{item.content}}
         </div>
+        <hr>
     </div>
 </div>
 
