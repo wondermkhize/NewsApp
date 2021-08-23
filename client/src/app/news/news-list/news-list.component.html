@@ -1,4 +1,12 @@
 <div>
+    <h1>NEWS HEADLINES</h1>
+    <hr>
+    <select [(ngModel)]="selectedOption" name="first" (change)="selected($event)" class="browser-default custom-select">
+        <option value=''>Select Country</option>
+        <option *ngFor="let item of options" value="{{item?.value}}">
+           {{item?.name}}
+        </option>
+     </select>
     <div *ngFor="let item of newsStories.articles" class="bg-light p-4 rounded">
         <h5 style="font-style: italic;">{{item.source.name}}</h5>
         <h3><a href="{{item.url}}">{{item.title}}</a></h3>
